@@ -1,4 +1,4 @@
-import pygame
+import pyautogui
 pygame.init()
 pygame.mixer.music.load('ex021.mp3.mp3')
 pygame.mixer.music.play()
