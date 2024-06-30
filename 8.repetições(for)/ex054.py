@@ -5,9 +5,9 @@ s = 0
 a = 0
 for c in range (0, 7):
     ano = int(input('Digite seu ano de nascimento: '))
-    if (ano - atual <= 18):
-        s = s + c
-    if (ano - atual > 18): 
-        a = a + c
-print('O total de pessoas com de maior é de {}'.format(s))
-print('O total de pessoa abaixo de 18 anos é {}'.format(a))
+    if (atual - ano < 21):
+        s += 1
+    if (atual - ano >= 21): 
+        a += 1
+print('O total de pessoas que atigiram a maioridade é {}'.format(a))
+print('O total de pessoa abaixo de 18 anos é {}'.format(s))
